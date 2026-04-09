@@ -1,15 +1,21 @@
-<h1>
-    Welcome to the Habit Tracker
-</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {{ config('app.name') }}
+    </title>
+    
+    @vite('resources/css/app.css')
 
-<p>
-    Olá, {{ $name }}! Bem-vindo ao Habit Tracker, onde você pode acompanhar seus hábitos diários e alcançar seus objetivos de forma mais eficiente.
-</p>
-<p>
-    Seus hábitos atuais são:
-</p>
-<ul>
-    @foreach ($habits as $habit)
-        <li>{{ $habit }}</li>
-    @endforeach
-</ul>
+</head>
+<body>
+
+    <h1 class="text-3xl font-bold underline text-center mt-10">
+        Hello World!
+    </h1>
+    
+</body>
+</html>
