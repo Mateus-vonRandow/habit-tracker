@@ -8,3 +8,4 @@ Route::get('/home', [\App\Http\Controllers\SiteController::class, 'index']);
 
 // login
 Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login', [LoginController::class, 'authenticate']);
