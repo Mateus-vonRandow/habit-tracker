@@ -12,7 +12,7 @@
 </head>
 
 
-<body class="bg-[#f0f0f0]">
+<body class="bg-[#cacaca]">
 
 
     {{-- Header --}}
