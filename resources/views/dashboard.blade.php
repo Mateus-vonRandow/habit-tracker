@@ -1,11 +1,11 @@
 <x-layout>
-    <main class="py-10">
-        <h1>
-         Dashboard
-        </h1>
+  <main class="py-10">
+    <h1>
+      Dashboard
+    </h1>
 
-        <p>
-            Bem vindo(a), {{ auth()->user()->name }}!
-        </p>
-    </main>
+    <p>
+      Bem vindo(a), {{ auth()->user()->name }}!
+    </p>
+  </main>
 </x-layout>

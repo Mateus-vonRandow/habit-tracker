@@ -20,6 +20,7 @@
             type="text"
             name="name"
             placeholder="Seu nome"
+            value="{{ old('name') }}"
             class="bg-white p-2 border-2 @error('name') border-red-500 @enderror"
           >
           @error('name')
@@ -37,6 +38,7 @@
             type="email"
             name="email"
             placeholder="your@email.com"
+            value="{{ old('email') }}"
             class="bg-white p-2 border-2 @error('email') border-red-500 @enderror"
           >
           @error('email')
@@ -74,10 +76,10 @@
             type="password"
             name="password_confirmation"
             placeholder="********"
-            class="bg-white p-2 border-2 @error('password') border-red-500 @enderror"
+            class="bg-white p-2 border-2 @error('password_confirmation') border-red-500 @enderror"
           >
 
-          @error('password')
+          @error('password_confirmation')
             <p class="text-red-500 text-sm">
               {{ $message }}
             </p>
